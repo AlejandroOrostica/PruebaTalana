@@ -1,0 +1,11 @@
+# Essentials
+Django==2.2.10
+djangorestframework==3.11.0
+django-inlinecss==0.3.0
+
+# Database drivers
+psycopg2==2.8.4
+
+# Celery
+redis==3.4.1
+celery==4.4.6

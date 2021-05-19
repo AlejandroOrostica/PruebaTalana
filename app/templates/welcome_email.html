@@ -1,0 +1,198 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+{% load inlinecss %}
+{% inlinecss "css/welcome_email_styles.css" %}
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+	<!--[if gte mso 9]>
+	<xml>
+		<o:OfficeDocumentSettings>
+		<o:AllowPNG/>
+		<o:PixelsPerInch>96</o:PixelsPerInch>
+		</o:OfficeDocumentSettings>
+	</xml>
+	<![endif]-->
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="format-detection" content="date=no" />
+	<meta name="format-detection" content="address=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="x-apple-disable-message-reformatting" />
+    <!--[if !mso]><!-->
+	<!-- <link href="https://fonts.googleapis.com/css?family=open sans:400,400i,700,700i" rel="stylesheet" /> -->
+    <!--<![endif]-->
+	<title>{{subject}}</title>
+	<!--[if gte mso 9]>
+	<style type="text/css" media="all">
+		sup { font-size: 100% !important; }
+	</style>
+	<![endif]-->
+
+</head>
+<body style="padding:0 !important; margin:0 !important; display:block !important; min-width:100% !important; width:100% !important; background:#DD7E0A; -webkit-text-size-adjust:none;">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#F7F7F7">
+  <tbody>
+    <tr>
+      <td align="center" valign="top"><table width="650" border="0" cellspacing="0" cellpadding="0" class="mobile-shell">
+        <tbody>
+          <tr>
+            <td class="td container" style="width:650px; min-width:650px; font-size:0pt; line-height:0pt; margin:0; font-weight:normal; padding:55px 0px;"><!-- Header -->
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tbody>
+                  <tr>
+                    <td class="p30-15" style="padding: 0px 30px 30px 30px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      <tbody>
+                        <tr>
+                          <th class="column-top" width="145" style="font-size:0pt; line-height:0pt; padding:0; margin:0; font-weight:normal; vertical-align:top;"> <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          </table>
+                          </th>
+                          <th class="column-empty" width="1" style="font-size:0pt; line-height:0pt; padding:0; margin:0; font-weight:normal; vertical-align:top;"></th>
+                          <th class="column" style="font-size:0pt; line-height:0pt; padding:0; margin:0; font-weight:normal;"> <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tbody>
+                              <tr>
+                                <td class="text-header" style="color:#475c77; font-family:'Muli', Arial,sans-serif; font-size:12px; line-height:16px; text-align:right;"><div mc:edit="text_1"><a class="link2" target="_blank" href="file:///C|/Users/Anita/AppData/Local/Temp/Rar$EXa0.493/bussy-free-html-email-template/mailchimp/*|ARCHIVE|*" style="color:#475c77; text-decoration:none;"></a></div></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          </th>
+                        </tr>
+                      </tbody>
+                    </table></td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- END Header -->
+              <!-- Intro -->
+              <div mc:repeatable="Select" mc:variant="Intro">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tbody>
+                    <tr>
+                      <td style="padding-bottom: 10px;"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tbody>
+                          <tr>
+                            <td class="tbrr p30-15" style="padding: 60px 30px; border-radius:26px 26px 0px 0px;" bgcolor="#008695"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                              <tbody>
+                                <tr>
+                                  <td class="h1 pb25" style="color:#ffffff; font-family:'Muli', Arial,sans-serif; font-size:40px; line-height:46px; text-align:left; padding-bottom:25px;"><div mc:edit="text_2">Hola!, {{user_name}}</div></td>
+                                </tr>
+                                <tr>
+                                  <td class="text-center pb25" style="color:#c1cddc; font-family:'Muli', Arial,sans-serif; font-size:16px; line-height:30px; text-align:left; padding-bottom:25px;"><div mc:edit="text_3">
+                                    <p>{{subject}}</p>
+                                    <br />
+                                    <p>Bienvenido al concurso por CONFORT?? .</p>
+                                    <br />
+                                    <p>Para comenzar, necesitamos confirmar tu dirección de correo electrónico, así que haz clic en este enlace para terminar de crear tu cuenta</p>
+                                    <br />
+<br />
+                                    <p><a class="button" href="http://localhost:8000/users/validate-email/{{user_email}}/" target="_blank">VALIDAR EMAIL</a> </p>
+                                    <br />
+<br />
+                                </tr>
+                                <!-- Button -->
+                                <tr mc:hideable> </tr>
+                                <!-- END Button -->
+                              </tbody>
+                            </table></td>
+                          </tr>
+                        </tbody>
+                      </table></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- END Intro -->
+              <!-- Article / Full Width Image + Title + Copy + Button -->
+              <div mc:repeatable="Select" mc:variant="Article / Full Width Image + Title + Copy + Button">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tbody>
+                    <tr> </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- END Article / Full Width Image + Title + Copy + Button -->
+              <!-- Two Columns / Articles -->
+              <div mc:repeatable="Select" mc:variant="Two Columns / Articles">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tbody>
+                    <tr> </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- END Two Columns / Articles -->
+              <!-- Article / Image On The Left - Copy On The Right -->
+              <div mc:repeatable="Select" mc:variant="Article / Image On The Left - Copy On The Right">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#12325c">
+                  <tbody>
+                    <tr> </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- END Article / Image On The Left - Copy On The Right -->
+              <!-- CTA Section -->
+              <div mc:repeatable="Select" mc:variant="CTA Section">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tbody>
+                    <tr> </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- END CTA Section -->
+              <!-- Article / Image On The Right - Copy On The Left -->
+              <div mc:repeatable="Select" mc:variant="Article / Image On The Right - Copy On The Left">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tbody>
+                    <tr> </tr>
+                    <tr> </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- END Article / Image On The Right - Copy On The Left -->
+              <!-- Article Secondary / Image On The Left - Copy On The Right -->
+              <div mc:repeatable="Select" mc:variant="Article Secondary / Image On The Left - Copy On The Right">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tbody>
+                    <tr>
+                      <td class="p30-15" bgcolor="#ff6666"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                      </table></td>
+                    </tr>
+                    <tr> </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- END Article Secondary / Image On The Left - Copy On The Right -->
+              <!-- Two Columns -->
+              <div mc:repeatable="Select" mc:variant="Two Columns">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <tbody>
+                    <tr> </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- END Two Columns -->
+              <!-- Footer -->
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    </table></td>
+                  </tr>
+                  <tr> </tr>
+                  <tr>
+                    <td class="img" style="font-size:0pt; line-height:0pt; text-align:left;"><div mc:edit="text_39">
+                      <!--[if !mso]><!-->
+                      *|LIST:DESCRIPTION|*
+                      *|LIST:ADDRESS|*
+                      *|REWARDS_TEXT|*
+                      <!--<![endif]-->
+                    </div></td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- END Footer --></td>
+          </tr>
+        </tbody>
+      </table></td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
+{% endinlinecss %}
